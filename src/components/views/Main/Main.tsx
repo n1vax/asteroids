@@ -6,7 +6,7 @@ import Game from "@lib/Game";
 
 interface Props { }
 
-const App = (props: Props) => {
+const Main = (props: Props) => {
   const [activeSceneName, setActiveSceneName] = useState<"main" | "matrix">("main");
   const gameRef = useRef<Game | null>();
   const canvasElRef = useRef<HTMLCanvasElement | null>(null);
@@ -121,4 +121,4 @@ const App = (props: Props) => {
   )
 }
 
-export default App;
+export default Main
